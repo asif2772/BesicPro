@@ -7,17 +7,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Profile</a></li>
-            <li><a href="${createLink(controller: 'registerUser', action: 'changePasswordForm')}">Change password</a></li>
-            <li><a href="${createLink(controller: 'logout')}">Logout</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div class="signup-form">
+<div class="signup-form formDsgn">
     <div class="signup-form">
         <h2>Profile Info</h2>
         <div class="form-group">

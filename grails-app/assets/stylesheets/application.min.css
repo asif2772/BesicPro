@@ -768,4 +768,9 @@ pre code{
 .signup-form form a:hover{
     text-decoration: underline;
 }
-
+.formDsgn {
+    background-color: #7777770a;
+    width: 500px;
+    border-radius: 10px;
+    border-radius: 10px;
+}

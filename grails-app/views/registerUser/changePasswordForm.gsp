@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="signup-form">
-    <form action="changePassword" method="post">
+    <form action="updatePassword" method="post">
         <g:if test="${flash.message}">
             <div class="alert alert-success">
                ${flash.message}
@@ -31,4 +31,3 @@
 </div>
 </body>
 </html>
-t>

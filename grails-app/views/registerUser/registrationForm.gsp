@@ -16,8 +16,10 @@
         <p class="hint-text">Create your account. It's free and only takes a minute.</p>
         <div class="form-group">
             <div class="row">
-                <div class="col-xs-6"><input type="text" class="form-control" name="firstName" placeholder="First Name" ></div>
-                <div class="col-xs-6"><input type="text" class="form-control" name="lastName" placeholder="Last Name" ></div>
+                <div class="col-xs-6"><input type="text" class="form-control" name="firstName" placeholder="First Name">
+                </div>
+                <div class="col-xs-6"><input type="text" class="form-control" name="lastName" placeholder="Last Name">
+                </div>
             </div>
         </div>
         <div class="form-group">
@@ -30,7 +32,12 @@
             <input type="text" class="form-control" name="email" placeholder="Email" required="required">
         </div>
         <div class="form-group">
-            <input type="text" value="${new Date()}" id="dateOfBirth" class="form-control" placeholder="Date of birth" name="dateOfBirth" required="required"/>
+            <div class="input-group date" id="example">
+                <input value="${new Date()}" type="date" class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
         </div>
         <div class="form-group">
             <input type="password" class="form-control" name="password" placeholder="Password" required="required">
@@ -41,10 +48,9 @@
             <a type="text" style="text-decoration: none;"
                href="${createLink(controller: 'login', action: 'auth')}" class="btn btn-worning">Cancel</a>
         </div>
+        <div class="text-center">Already have an account? <a href="${createLink(controller: 'login', action: 'auth')}">
+            Sign in</a></div>
     </form>
-
-    <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
-
 </div>
 </body>
 </html>

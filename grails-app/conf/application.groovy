@@ -7,6 +7,7 @@ grails.plugin.springsecurity.authority.className = 'com.amyApp.Role'
 
 grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/login/loginSuccess'
+grails.plugin.springsecurity.password.algorithm = 'SHA-256'
 
 grails.plugin.springsecurity.rejectIfNoRule = false
 grails.plugin.springsecurity.fii.rejectPublicInvocations = false
